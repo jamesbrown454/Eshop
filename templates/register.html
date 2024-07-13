@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasaba alyş sahypasy</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #111;
+  width: 100%;
+  overflow: hidden;
+}
+.ring {
+  position: relative;
+  width: 550px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ring i {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #fff;
+  transition: 0.5s;
+}
+.ring i:nth-child(1) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 4s linear infinite;
+}
+.ring i:nth-child(2) {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate 6s linear infinite;
+}
+.ring i:nth-child(3) {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate2 8s linear infinite;
+}
+.ring i:nth-child(4) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate2 10s linear infinite;
+}
+.ring i:nth-child(5) {
+  border-radius: 35% 40% 50% 55%/35% 60% 65% 30%;
+  animation: animate 12s linear infinite;
+}
+.ring:hover i {
+  border: 6px solid var(--clr);
+  filter: drop-shadow(0 0 20px var(--clr));
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.login {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 100px;
+}
+.login h2 {
+    text-align: center;
+  font-size: 38px;
+  color: #fff;
+}
+.login .inputBx {
+  position: relative;
+  width: 100%;
+}
+.login .inputBx input {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  font-size: 18px;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+}
+.login .inputBx input[type="submit"] {
+  width: 100%;
+  background: #0078ff;
+  background: linear-gradient(45deg, #ff357a, #fff172);
+  border: none;
+  cursor: pointer;
+}
+.login .inputBx input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+.login .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 118px;
+  font-size: 22px;
+}
+.login .links a {
+  color: rgb(27, 199, 211);
+  text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="ring">
+        <i style="--clr:#00ff0a;"></i>
+        <i style="--clr:#ff0057;"></i>
+        <i style="--clr:#fffd44;"></i>
+        <i style="--clr:#173cf2;"></i>
+        <i style="--clr:#b623ec;"></i>
+        <div class="login">
+          <h2>Hasaba alynmak</h2>
+            <form method="POST">
+                {% csrf_token %}
+                <div class="inputBx">
+                    <input type="text" placeholder="Ulanyjy adyňyzy giriziň: " id="username" name="username" value="">
+                </div>
+                <br>
+                <div class="inputBx">
+                    <input type="password" placeholder="Açar sözüňizi giriziň: " id="password" name="password" value="">
+                </div>
+                <br>
+                <div class="inputBx">
+                    <input type="password" placeholder="Açar sözüňizi tassyklaň: " id="confirm_password" name="confirm_password" value="">
+                </div>
+                <br>
+                <div class="inputBx">
+                    <input type="submit" value="Hasaba alynmak">
+                </div>
+                <br>
+                <div class="links">
+                    <a href="{% url 'login' %}"><b> Girmek </b></a>
+                </div>
+            </form>
+        </div>
+      </div>
+</body>
+</html>

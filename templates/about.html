@@ -1,0 +1,341 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Biz barada</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+<link rel="icon" type="image/png" href="{% static 'img/images/icons/favicon.png' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/fonts/iconic/css/material-design-iconic-font.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/fonts/linearicons-v1.0.0/icon-font.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/vendor/animate/animate.css' %}">
+<!--===========================================================/====================-->	
+	<link rel="stylesheet" type="text/css" href="{% static 'css/vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===========================================================/====================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/vendor/animsition/css/animsition.min.css' %}">
+<!--===========================================================/====================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/vendor/select2/select2.min.css' %}">
+<!--===========================================================/====================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/vendor/perfect-scrollbar/perfect-scrollbar.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/css/main.css' %}">
+<!--===============================================================================================-->
+</head>
+<body class="animsition">
+	
+	<!-- Header -->
+	<header class="header-v4">
+		<!-- Header desktop -->
+		<div class="container-menu-desktop" >
+			<!-- Topbar -->
+			<div class="top-bar" >
+				<div class="content-topbar flex-sb-m h-full container">
+					<div class="left-top-bar">
+						<h5> Eltip bermek hyzmaty 100 manat  </h5>
+ 					</div>				
+				</div>
+			</div>
+
+			<div class="wrap-menu-desktop how-shadow1">
+				<nav class="limiter-menu-desktop container">					
+					<!-- Logo desktop -->		
+					<a href="{% url 'home' %}" class="logo">
+						<img src="{% static 'img/images/icons/icon2.png' %}" alt="IMG-LOGO">
+					</a>
+
+					<!-- Menu desktop -->
+					<div class="menu-desktop">
+						<ul class="main-menu">
+							<li>
+								<a href="{% url 'home' %}">Esasy menýu</a>
+							</li>
+
+							<li>
+								<a href="{% url 'product' %}">Egin-eşikler</a>
+							</li>
+
+							<li>
+								<a href="{% url 'shoping_cart' %}">Alynan harytlar</a>
+							</li>
+
+							<li>
+								<a href="{% url 'about' %}">Biz barada</a>
+							</li>
+
+							<li>
+								<a href="{% url 'contact' %}">Habarlaşmak</a>
+							</li>
+						</ul>
+					</div>	
+
+					<!-- Icon header -->
+					<div class="main-menu">
+						<li>
+							<a href="{% url 'home' %}"  style="margin-left: 250px;">{{ request.user.username }}</a>
+						</li>
+						<li>
+							<a href="{% url 'logout' %}">Çykmak</a>
+						</li>
+					</div>
+				</nav>
+			</div>	
+		</div>
+	</header>
+
+	<!-- Title page -->
+	<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('/static/img/images/bg-02.jpg');">
+		<h2 class="ltext-105 cl0 txt-center">
+			Biz barada
+		</h2>
+	</section>	
+
+
+	<!-- Content page -->
+	<section class="bg0 p-t-75 p-b-120">
+		<div class="container">
+			<div class="row p-b-148">
+				<div class="col-md-7 col-lg-8">
+					<div class="p-t-7 p-r-85 p-r-15-lg p-r-0-md">
+						<h3 class="mtext-111 cl2 p-b-16">
+							Biziň taryhymyz
+						</h3>
+
+						<p class="stext-113 cl6 p-b-26">
+							Egin-eşik dükany ýa -da eşik dükany, taýýar eşik önümlerini satýan islendik dükan.Gymmat ýa-da dizaýner eşik satýan kiçijik dükana butik diýip atlandyryp bolar . Mekdep formasy ýa-da açyk sport görnüşleri ýaly çäklendirilen bazar üçin eşik satýan dükana eşik diýip atlandyryp bolar . Clothingewropada ilkinji eşik dükanlarynyň haçan açylandygy belli däl. Taýýar eşikler döwründen ozal, tikinçiler ýa-da senetçiler tarapyndan egin-eşik ýasalanda, dükanlar ikinji el eşiklerini satan bolmagy mümkin. Käbir taýýar eşikler XVI asyrda öndürilen bolmagy mümkin. “IMAGINATIVE FASHION” 2017-NJI ÝYLYŇ MART AÝYNDA IŞE BAŞLALY BÄRI ÖZÜNI GÜÝÇLI MODA DUÝGUSY BILEN MEŞGULLANÝAN ÇALT ZENAN ÜÇIN GLOBAL MODA MERKEZI HÖKMÜNDE GÖRKEZDI, ISLENDIK ÝAŞDA BOLUP BILER WE DIZAÝNLARY BEDEN GÖRNÜŞLERINIŇ KÖPÜSINE GÖWNI ÝETÝÄR.
+							AÝRATYN, ELDE ÝASALAN, ÜÝTGEŞIK, ÖZBOLUŞLY, YLHAM BERIJI, GYZYKLY WE GÜÝÇLI EŞIKLERI GOWY GÖRÝÄR. ÖŇDEBARYJY MODANY SATÝARYS WE MODA BILEN BAGLANYŞYKLY MAZMUNYŇ DÜRLI ÖLÇEGLERINI WE ÖLÇEG EŞIKLERINI HÖDÜRLEÝÄRIS. DIZAÝNLARYMYZ ASYRLARBOÝY MODADAN YLHAM ALÝAR, MUŇA MYSAL HÖKMÜNDE XVII ASYRYŇ GOLILLA - ISPAN ÝAKASY BOLUP BILER. EGIN-EŞIKLERIMIZ BILEN ÄHLI JYNSLARDAN, ULULYKLARDAN WE MODA GÖRNÜŞLERINDEN AÝAL-GYZLARA GÜÝÇ BERMEK ISLEÝÄRIS. ADATY MODANYŇ ÇÄKLERINI ÖŇE SÜRÝÄRIS WE ÝOKARY MODA HILLI EŞIKLERI ÖŇ GÖRMEDIK.
+							ESASY WEZIPÄMIZ, ŞAHSYÝETIŇ ÖZBOLUŞLY STILLERINI ÖZÜNDE JEMLEÝÄN DIZAÝNDA IŇ ESASYDYR. FACEÜZÜŇ GÖRNÜŞI, SAÇ DÜZÜMI WE UZYNLYGY ARASYNDAKY SIMBIOZ BARADAKY DÜŞÜNJÄMIZI DIŇE BIR OWADAN DÄL, EÝSEM AJAÝYP ÝASALAN WE IŞLEÝÄN BÖLEKLERI DÖRETMEK ÜÇIN KÖP SANLY MATERIALLAR WE INNOWASIÝA USULLARY BILEN BIRLEŞDIRÝÄRIS, MÜŞDERILERIMIZI MODA WE AJAÝYP DUÝÝARYS.
+						</p>
+					</div>
+				</div>
+
+				<div class="col-11 col-md-5 col-lg-4 m-lr-auto">
+					<div class="how-bor1 ">
+						<div class="hov-img0">
+							<img src="{% static '/img/images/about-01.jpg' %}" alt="IMG">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="order-md-2 col-md-7 col-lg-8 p-b-30">
+					<div class="p-t-7 p-l-85 p-l-15-lg p-l-0-md">
+						<h3 class="mtext-111 cl2 p-b-16">
+							Biziň wezipelerimiz
+						</h3>
+						<div class="bor16 p-l-29 p-b-9 m-t-22">
+							<p class="stext-114 cl6 p-r-40 p-b-11">
+								Gündelik moda size beren wadamyzdyr.Müşderilerimiz hakda bilýän bir zadymyz bar bolsa, olar ýaşamak bilen meşgullanýarlar. Işlejek bolýarlar. Çagalary terbiýeleýärler. Sport zalyna urýarlar. Synaglar üçin okaýarlar. Olar anna güni gije ugradylar. Olar ýekşenbe krepkalarynda oturýarlar.Günüň dowamynda sizi ajaýyp görnüşde saklamak, edýän işimiziň özenidir. Onlaýn egin-eşik dükanynda, ýaşamagy halaýan adamlara ýönekeý, elýeterli şkaf ştapellerini bermek biziň wezipämiz boldy. Halaýan markalaryňyzdan, size gerek reňklerde we ululyklarda isleýän görnüşleriňizi aldyk.Söwda merkezindäki setirleri geçiň; býujetiňize bolşy ýaly, meýilnamaňyza laýyk gelýän onlaýn söwda tejribesini döretdik.Birnäçe minutyň içinde her gün geýmegi halaýan öňdebaryjy markalaryňyza goşup bilersiňiz. Gildan, Bella + Canwas we Hanes-i gözüňiziň alnynda göz öňüne getiriň. Düşünjeli söwda tejribämiz, ýolda täzelerini tapmak bilen, amatly pursatlaryňyzy çalt tapmaga kömek etmek üçin döredildi.Onlaýn geýim dükanynda, geýýän zadyňyzda we dükanyňyzda rahat, ynamly we aladasyz bolmagyňyzy isleýäris. Geliň, her gün geýineliň.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="order-md-1 col-11 col-md-5 col-lg-4 m-lr-auto p-b-30">
+					<div class="how-bor2">
+						<div class="hov-img0">
+							<img src="{% static '/img/images/about-02.jpg' %}" alt="IMG">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+	
+		
+
+	<!-- Footer -->
+	<footer class="bg3 p-t-75 p-b-32">
+		<div class="container" align="center">
+			<div class="row">
+				<div class="col-sm-6 col-lg-3 p-b-50">
+					<h4 class="stext-301 cl0 p-b-30">
+						Kategoriýalar
+					</h4>
+
+					<ul>
+						<li class="p-b-10">
+							<a href="{% url 'product' %}" class="stext-107 cl7 hov-cl1 trans-04">
+								Aýallar
+							</a>
+						</li>
+
+						<li class="p-b-10">
+							<a href="{% url 'product' %}" class="stext-107 cl7 hov-cl1 trans-04">
+								Erkekler
+							</a>
+						</li>
+
+						<li class="p-b-10">
+							<a href="{% url 'product' %}" class="stext-107 cl7 hov-cl1 trans-04">
+								Aýakgaplar
+							</a>
+						</li>
+
+						<li class="p-b-10">
+							<a href="{% url 'product' %}" class="stext-107 cl7 hov-cl1 trans-04">
+								Sagatlar
+							</a>
+						</li>
+
+						<li class="p-b-10">
+							<a href="{% url 'product' %}" class="stext-107 cl7 hov-cl1 trans-04">
+								Sumkalar
+							</a>
+						</li>
+
+						<li class="p-b-10">
+							<a href="{% url 'product' %}" class="stext-107 cl7 hov-cl1 trans-04">
+								Joraplar
+							</a>
+						</li>
+
+						<li class="p-b-10">
+							<a href="{% url 'product' %}" class="stext-107 cl7 hov-cl1 trans-04">
+								Parfýumeriýa
+							</a>
+						</li>
+
+						<li class="p-b-10">
+							<a href="{% url 'product' %}" class="stext-107 cl7 hov-cl1 trans-04">
+								Akksesuarlar
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-6 col-lg-3 p-b-50">
+					<h4 class="stext-301 cl0 p-b-30">
+						Habarlaşmak
+					</h4>
+
+					<p class="stext-107 cl7 size-201">
+						Soragyňyz barmy? Telefon belgimiz: +99361252365
+					</p>
+
+					<div class="p-t-27">
+						<a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dru_RU" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+							<i class="fa fa-facebook"></i>
+						</a>
+
+						<a href="https://www.instagram.com/accounts/login/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+							<i class="fa fa-instagram"></i>
+						</a>
+
+						<a href="https://ru.pinterest.com/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+							<i class="fa fa-pinterest-p"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-3 p-b-50">
+					<h4 class="stext-301 cl0 p-b-30">
+						Habar
+					</h4>
+
+					<form>
+						<div class="wrap-input1 w-full p-b-4">
+							<input class="input1 bg-none plh1 stext-107 cl7" type="text" name="email" placeholder="email@mysal.com">
+							<div class="focus-input1 trans-04"></div>
+						</div>
+
+						<div class="p-t-18">
+							<button class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04">
+								Subscribe
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="p-t-40">
+				<div class="flex-c-m flex-w p-b-18">
+					<a href="https://www.paypal.com/ru/home" class="m-all-1">
+						<img src="{% static 'img/images/icons/icon-pay-01.png' %}" alt="ICON-PAY">
+					</a>
+
+					<a href="https://cis.visa.com/" class="m-all-1">
+						<img src="{% static 'img/images/icons/icon-pay-02.png' %}" alt="ICON-PAY">
+					</a>
+
+					<a href="https://www.mastercard.ru/ru-ru.html" class="m-all-1">
+						<img src="{% static 'img/images/icons/icon-pay-03.png' %}" alt="ICON-PAY">
+					</a>
+
+					<a href="#" class="m-all-1">
+						<img src="{% static 'img/images/icons/icon-pay-04.png' %}" alt="ICON-PAY">
+					</a>
+
+					<a href="#" class="m-all-1">
+						<img src="{% static 'img/images/icons/icon-pay-05.png' %}" alt="ICON-PAY">
+					</a>
+				</div>
+
+				<p class="stext-107 cl6 txt-center">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright  &copy;<script>document.write(new Date().getFullYear());</script> <br> Ähli hukuklar goralan <br><i class="fa fa-heart-o" aria-hidden="true"></i><a href="#" target="_blank"> Atamyrat Bazarbaýew </a> tarapyndan taýýarlanan
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+				</p>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="zmdi zmdi-chevron-up"></i>
+		</span>
+	</div>
+
+<!--===============================================================================================-->	
+<script src="{% static 'css/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'css/vendor/animsition/js/animsition.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'css/vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static 'css/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'css/vendor/select2/select2.min.js' %}"></script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+		})
+	</script>
+<!--===============================================================================================-->
+<script src="{% static 'css/vendor/MagnificPopup/jquery.magnific-popup.min.js' %}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'css/vendor/perfect-scrollbar/perfect-scrollbar.min.js' %}"></script>
+<script>
+    $('.js-pscroll').each(function(){
+        $(this).css('position','relative');
+        $(this).css('overflow','hidden');
+        var ps = new PerfectScrollbar(this, {
+            wheelSpeed: 1,
+            scrollingThreshold: 1000,
+            wheelPropagation: false,
+        });
+
+        $(window).on('resize', function(){
+            ps.update();
+        })
+    });
+</script>
+<!--===============================================================================================-->
+<script src="{% static 'js/js/main.js' %}"></script>
+	
+</body>
+</html>
